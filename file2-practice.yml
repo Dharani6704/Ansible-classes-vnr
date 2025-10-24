@@ -1,0 +1,13 @@
+-
+  name: pb on sample execution of pb
+  hosts: all
+  tasks:
+    - name: code to create a directory
+      file:
+        path: /opt/asia
+        state: directory
+
+    - name: code to create a file
+      ansible.builtin.file::
+        path: /opt/asia/delhi.txt
+        state: touch
