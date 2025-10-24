@@ -1,0 +1,19 @@
+-
+  name: pb on sample execution of pb
+  hosts: all
+  tasks:
+    - name: code to create a directory
+      file:
+        path: /opt/xyz
+        state: directory
+
+    - name: code to create a file
+      file:
+        path: /opt/xyz/vnr.txt
+        state: touch
+        
+    - name: code to write content to file
+      lineinfile:
+       path: /opt/xyz/vnr.txt
+       line: "Welcome to Ansible classes at VNR"
+       state: present
