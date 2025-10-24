@@ -8,6 +8,6 @@
         state: directory
 
     - name: code to create a file
-      ansible.builtin.file::
+      file::
         path: /opt/asia/delhi.txt
         state: touch
