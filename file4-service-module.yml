@@ -1,0 +1,13 @@
+-
+  name: pb on httpd installation
+  hosts: all
+  tasks:
+    - name: code to install httpd
+      yum:
+        name: httpd
+        state: present
+
+    - name: code to start httpd services
+      service:
+        name: httpd
+        state: started
