@@ -1,0 +1,8 @@
+-
+  name: pb of usecase of yum module
+  hosts: all
+  tasks:
+    - name: code to install git
+      yum:
+        name: git
+        state: present
