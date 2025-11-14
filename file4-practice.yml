@@ -20,6 +20,6 @@
 
     - name: replace text in /opt/xyz/abc.txt
       lineinfile:
-      path: /opt/xyz/vnr.txt
+      path: /opt/xyz/abc.txt
       regexp: '.*'
       line: "hello world"
